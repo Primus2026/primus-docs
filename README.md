@@ -15,6 +15,8 @@ Tutaj znajdziesz szczegółowe opisy architektury, instrukcje wdrożeniowe oraz 
   - Bezpieczeństwo
 - **[Dokumentacja API (Swagger)](api/index.html)**
   Interaktywna dokumentacja endpointów i schematów danych.
+- **[Raport Wydajności](test_wydajności.md)**
+  Wyniki testów obciążeniowych (Standard, AI) na specyfikacji i7-13700KF + RTX 3060 Ti.
 
 ### Odnośniki do repozytoriów 
 W poszczególnych readme znajduja sie dokładniejsze opisy poszczególnych modułów.
