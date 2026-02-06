@@ -6,14 +6,14 @@ Tutaj znajdziesz szczegółowe opisy architektury, instrukcje wdrożeniowe oraz 
 ## 📚 Spis Dokumentacji
 
 ### Główna Dokumentacja
-- 📘 **[Opis Rozwiązania](docs/opis_rozwiazania.md)**
+- **[Opis Rozwiązania](docs/opis_rozwiazania.md)**
   Kompleksowy opis systemu, zawierający:
   - Architekturę (Hybrid Event-Driven Modular Monolith)
   - Diagramy (Komponentów, ERD)
   - Opis modułów (Backend, Frontend, Mobile, IoT, AI)
   - Model danych
   - Bezpieczeństwo
-- 🔌 **[Dokumentacja API (Swagger)](api/index.html)**
+- **[Dokumentacja API (Swagger)](api/index.html)**
   Interaktywna dokumentacja endpointów i schematów danych.
 
 ### Odnośniki do repozytoriów 
