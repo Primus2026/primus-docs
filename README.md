@@ -13,6 +13,8 @@ Tutaj znajdziesz szczegółowe opisy architektury, instrukcje wdrożeniowe oraz 
   - Opis modułów (Backend, Frontend, Mobile, IoT, AI)
   - Model danych
   - Bezpieczeństwo
+- 🔌 **[Dokumentacja API (Swagger)](api/index.html)**
+  Interaktywna dokumentacja endpointów i schematów danych.
 
 ### Odnośniki do repozytoriów 
 W poszczególnych readme znajduja sie dokładniejsze opisy poszczególnych modułów.
