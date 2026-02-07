@@ -109,11 +109,11 @@ Tutaj odwzorowujesz fizyczny układ magazynu w systemie.
 
 - **Dodawanie Regału:**
 
-1. Kliknij "Dodaj Regał".
+    1. Kliknij "Dodaj Regał".
 
-2. Wypełnij formularz: Oznaczenie (np. R-01), Wymiary, Limity Wagi i Temperatury.
+    2. Wypełnij formularz: Oznaczenie (np. R-01), Wymiary, Limity Wagi i Temperatury.
 
-3. _Walidacja:_ System nie pozwoli stworzyć regału z ujemnymi wymiarami.
+    3. _Walidacja:_ System nie pozwoli stworzyć regału z ujemnymi wymiarami.
 
 - **Import Masowy (CSV):**
 
@@ -209,13 +209,13 @@ Następujące moduły działają identycznie jak u Administratora (patrz rozdzia
 
 - **Weryfikacja Dwuetapowa (2FA):**
 
-1. Kliknij "Włącz 2FA".
+    1. Kliknij "Włącz 2FA".
 
-2. Zeskanuj kod QR aplikacją w telefonie (Google Authenticator) i kniknij przycisk "dalej".
+    2. Zeskanuj kod QR aplikacją w telefonie (Google Authenticator) i kniknij przycisk "dalej".
 
-3. Wpisz 6-cyfrowy kod z Google Authenticator i zakończ proces.
+    3. Wpisz 6-cyfrowy kod z Google Authenticator i zakończ proces.
 
-4. Od teraz logowanie będzie wymagało podania jednorazowego kodu dla bezpieczeństwa.
+    4. Od teraz logowanie będzie wymagało podania jednorazowego kodu dla bezpieczeństwa.
 
 ---
 
@@ -241,11 +241,11 @@ Jak położyć towar na półkę?
 
 3. **Co jeśli kod jest zniszczony? (AI):**
 
-- Kliknij "Użyj AI". Zrób zdjęcie produktu.
+    - Kliknij "Użyj AI". Zrób zdjęcie produktu.
 
-- System rozpozna towar.
+    - System rozpozna towar.
 
-- **Co jeśli AI się pomyli? (Pick from List):** Jeśli system nie jest pewny, wyświetli okienko z pytaniem "Czy to ten produkt?". Kliknij "To nie to", aby ręcznie wybrać właściwy produkt z listy rozwijanej.
+    - **Co jeśli AI się pomyli? (Pick from List):** Jeśli system nie jest pewny, wyświetli okienko z pytaniem "Czy to ten produkt?". Kliknij "To nie to", aby ręcznie wybrać właściwy produkt z listy rozwijanej.
 
 4.  **Alokacja:** Aplikacja wskaże, gdzie masz iść (np. "Regał R-01, kolumna 5, rząd 3").
 
@@ -261,9 +261,9 @@ Jak pobrać towar do wysyłki?
 
 3. **Lokalizacja (FIFO):**
 
-- System wskaże _konkretną_ sztukę, którą musisz wziąć (tę, która leży najdłużej).
+    - System wskaże _konkretną_ sztukę, którą musisz wziąć (tę, która leży najdłużej).
 
-- Nie bierz towaru z innej półki – system to wykryje (niezgodność wagi).
+    - Nie bierz towaru z innej półki – system to wykryje (niezgodność wagi).
 
 4. Zdejmij towar i kliknij **"Potwierdź pobranie"**.
 
@@ -289,10 +289,10 @@ Najbardziej zaawansowana funkcja systemu. Pozwala sterować aplikacją bez użyc
 
 2. Powiedz komendę. Przykłady:
 
-- **Przyjęcie:** _"Przyjmij mleko"_ -> System automatycznie wypełni formularz przyjęcia.
+    - **Przyjęcie:** _"Przyjmij mleko"_ -> System automatycznie wypełni formularz przyjęcia.
 
-- **Wydanie:** _"Wydaj paracetamol"_ -> System znajdzie najstarszą partię leku i pokaże Ci, gdzie iść.
+    - **Wydanie:** _"Wydaj paracetamol"_ -> System znajdzie najstarszą partię leku i pokaże Ci, gdzie iść.
 
-- **Raport:** _"Wygeneruj raport temperatur [dla regału numer 5]"_ -> System zleci raport.
+    - **Raport:** _"Wygeneruj raport temperatur [dla regału numer 5]"_ -> System zleci raport.
 
 Asystent rozumie język naturalny. Możesz mówić pełnymi zdaniami, choć najlepiej działają krótkie komendy. System "słyszy", przetwarza Twoją mowę na tekst, a następnie inteligenta analiza (LLM) decyduje, jaką akcję wykonać w aplikacji.
