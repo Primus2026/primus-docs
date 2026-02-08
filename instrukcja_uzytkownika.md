@@ -1,8 +1,8 @@
-# Podręcznik Użytkownika Systemu PRIMUS
+# Podręcznik Użytkownika Systemu Racket
 
 ## Wstęp
 
-System PRIMUS to zaawansowane narzędzie klasy WMS (Warehouse Management System), które łączy tradycyjne zarządzanie magazynem z nowoczesną sztuczną inteligencją. Niniejszy podręcznik został przygotowany tak, aby poprowadzić Cię krok po kroku przez każdą funkcję systemu, niezależnie od Twojego doświadczenia technicznego.
+System Racket to zaawansowane narzędzie klasy WMS (Warehouse Management System), które łączy tradycyjne zarządzanie magazynem z nowoczesną sztuczną inteligencją. Niniejszy podręcznik został przygotowany tak, aby poprowadzić Cię krok po kroku przez każdą funkcję systemu, niezależnie od Twojego doświadczenia technicznego.
 
 Dokumentacja podzielona jest na cztery główne sekcje:
 
