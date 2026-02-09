@@ -17,6 +17,8 @@ Tutaj znajdziesz szczegółowe opisy architektury, instrukcje wdrożeniowe oraz 
   Interaktywna dokumentacja endpointów i schematów danych.
 - **[Raport Wydajności](test_wydajności.md)**
   Wyniki testów obciążeniowych (Standard, AI) na specyfikacji i7-13700KF + RTX 3060 Ti.
+- **[Instrukcja Użytkownika](https://github.com/Primus2026/primus-docs/blob/main/instrukcja_uzytkownika.md)**
+  Pełna instrukcja obsługi aplikacji mobilnej i panelu webowego
 
 ### Odnośniki do repozytoriów 
 W poszczególnych readme znajduja sie dokładniejsze opisy poszczególnych modułów.
