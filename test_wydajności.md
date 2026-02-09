@@ -18,7 +18,7 @@ Testy zostały przeprowadzone na lokalnym środowisku deweloperskim (Docker).
 
 ## 2. Scenariusze Testowe ("Extreme")
 
-### A. Scenariusz "Standard User" (200 Użytkowników)
+### A. Scenariusz Standardowy (200 Użytkowników)
 Symulacja intensywnej pracy magazynu: 200 jednoczesnych pracowników wykonujących operacje wyszukiwania, alokacji i generowania raportów.
 
 **Komenda:**
@@ -36,8 +36,8 @@ Symulacja intensywnej pracy magazynu: 200 jednoczesnych pracowników wykonujący
 
 ---
 
-### B. Scenariusz "AI User" (20 Użytkowników)
-Symulacja 20 inżynierów jednocześnie wydających komendy głosowe (Text-to-Intent). Jest to test skrajny dla pojedynczej karty graficznej.
+### B. Scenariusz AI (20 Użytkowników)
+Symulacja 20 pracowników jednocześnie wydających komendy głosowe. Jest to test skrajny dla pojedynczej karty graficznej.
 
 **Komenda:**
 `poetry run locust -f scripts/locustfile.py AIUser -u 20 -r 2 --run-time 1m`
