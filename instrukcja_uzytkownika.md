@@ -318,39 +318,44 @@ Aplikacja to Twoje główne narzędzie pracy na hali magazynowej.
 
 ![Logowanie Mobile 3](assets/user-manual/mobile-logowanie-3.png)
 
+### Dashboard - Panel Główny
+
+Po poprawnym zalogowaniu zobaczysz ekran główny aplikacji (Dashboard), który umożliwia szybki dostęp do najważniejszych funkcji.
+
+![Panel Główny](assets/user-manual/mobile-dashboard.jpg)
+
 ### Proces Przyjęcia (Inbound)
 
 Jak położyć towar na półkę?
 
 1. Kliknij **Zieloną Kartę "Przyjmij produkt"**.
 
-2. **Skanowanie:** Zeskanuj kod kreskowy.
+2. **Skanowanie:** Zeskanuj kod kreskowy produktu lub wpisz go ręcznie, jeśli kod jest nieczytelny.
+
+   ![Ręczne wpisywanie kodu](assets/user-manual/mobile-przyjmowanie-manualne-wpisanie-kodu.jpg)
 
 3. **Co jeśli kod jest zniszczony? (AI):**
    - Kliknij "Użyj AI". Zrób zdjęcie produktu.
 
-   - System rozpozna towar.
+   ![Robienie zdjęcia](assets/user-manual/mobile-przyjmowanie-robienie-zdjecia.jpg)
+   - System przeanalizuje zdjęcie i spróbuje rozpoznać towar.
 
+   ![Analiza AI](assets/user-manual/mobile-przyjmowanie-ai-zdjecie.jpg)
    - **Co jeśli AI się pomyli? (Pick from List):** Jeśli system nie jest pewny, wyświetli okienko z pytaniem "Czy to ten produkt?". Kliknij "To nie to", aby ręcznie wybrać właściwy produkt z listy rozwijanej.
 
-4. **Alokacja:** Aplikacja wskaże, gdzie masz iść (np. "Regał R-01, kolumna 5, rząd 3").
+   ![Wybór produktu z listy](assets/user-manual/mobile-przyjmowanie-ai-nie-rozpoznalo-wybierz-produkt.jpg)
 
-5. Połóż towar i kliknij **"Potwierdź lokację"**.
+4. **Alokacja:** Aplikacja wskaże sugerowane miejsce w magazynie (np. "Regał w sali głównej, Półka 1").
+
+   ![Znaleziono miejsce](assets/user-manual/mobile-przyjmowanie-znaleziono-miejsce-w-magazynie.jpg)
+
+5. Połóż towar we wskazanym miejscu i kliknij **"Zatwierdź"**.
+
+   ![Potwierdzenie przyjęcia](assets/user-manual/mobile-przyjmowanie-sukces-przyjmowania-produktu.jpg)
 
 ### Proces Wydania (Outbound)
 
-Jak pobrać towar do wysyłki?
-
-1. Kliknij **Niebieską Kartę "Zdejmij produkt"**.
-
-2. **Wybór Produktu:** Zeskanuj kod, użyj AI (tak samo jak przy przyjęciu) lub wybierz ręcznie z listy.
-
-3. **Lokalizacja (FIFO):**
-   - System wskaże _konkretną_ sztukę, którą musisz wziąć (tę, która leży najdłużej).
-
-   - Nie bierz towaru z innej półki – system to wykryje (niezgodność wagi).
-
-4. Zdejmij towar i kliknij **"Potwierdź pobranie"**.
+Proces wydania towaru z magazynu przebiega analogicznie do procesu przyjęcia (Inbound), z tą różnicą, że zamiast odkładać towar na półkę, pobierasz go zgodnie ze wskazówkami aplikacji. Aplikacja poprowadzi Cię do odpowiedniej lokalizacji, skąd należy pobrać towar (zgodnie z zasadą FIFO - First In, First Out).
 
 ### Generowanie Raportów (Z Telefonu)
 
@@ -369,6 +374,8 @@ Możesz zlecić raport stojąc bezpośrednio przy regale.
 ### Asystent Głosowy (Voice Assistant)
 
 Najbardziej zaawansowana funkcja systemu. Pozwala sterować aplikacją bez użycia rąk.
+
+![Asystent Głosowy](assets/user-manual/mobile-asystent-glosowy.jpg)
 
 1. Kliknij ikonę mikrofonu na dole ekranu głównego.
 
