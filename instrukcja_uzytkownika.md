@@ -47,7 +47,7 @@ Dokumentacja podzielona jest na cztery główne sekcje:
 
 ---
 
-## 1. Menu i Nawigacja (Panel WWW) <a  id="menu-nav"></a>
+## 1. Menu i Nawigacja (Panel WWW) {#menu-nav}
 
 Po zalogowaniu do systemu w przeglądarce internetowej, po lewej stronie ekranu zobaczysz pasek nawigacyjny (Sidebar). Umożliwia on szybki dostęp do wszystkich modułów.
 
@@ -73,7 +73,7 @@ Po zalogowaniu do systemu w przeglądarce internetowej, po lewej stronie ekranu 
 
 ---
 
-## 2. Instrukcja dla Administratora <a  id="admin-guide"></a>
+## 2. Instrukcja dla Administratora {#admin-guide}
 
 Jako Administrator posiadasz pełną kontrolę nad systemem. Twoim zadaniem jest dbanie o poprawność danych i ciągłość pracy magazynu.
 
@@ -257,7 +257,7 @@ Bezpieczeństwo danych to priorytet.
 
 ---
 
-## 3. Instrukcja dla Magazyniera (Panel WWW) <a  id="worker-guide"></a>
+## 3. Instrukcja dla Magazyniera (Panel WWW) {#worker-guide}
 
 Pracownicy magazynu również mają dostęp do panelu WWW, choć z ograniczonymi uprawnieniami.
 
@@ -300,7 +300,7 @@ Następujące moduły działają identycznie jak u Administratora (patrz rozdzia
 
 ---
 
-## 4. Aplikacja Mobilna (Dla Wszystkich) <a  id="mobile-app"></a>
+## 4. Aplikacja Mobilna (Dla Wszystkich) {#mobile-app}
 
 Aplikacja to Twoje główne narzędzie pracy na hali magazynowej.
 
@@ -312,7 +312,7 @@ Aplikacja to Twoje główne narzędzie pracy na hali magazynowej.
 
 2. Wpisz Login i Hasło.
 
-![Logowanie Mobile 2](assets/user-manual/mobile-logowanie-21.png)
+![Logowanie Mobile 2](assets/user-manual/mobile-dashboard.jpg)
 
 3. **2FA:** Jeśli włączyłeś weryfikację dwuetapową, system poprosi o 6-cyfrowy kod z aplikacji Authenticator. Bez niego nie wejdziesz do systemu.
 

@@ -18,9 +18,11 @@
 - [6. Bezpieczeństwo](#6-bezpieczeństwo)
 - [7. Wdrożenie i Uruchamianie](#7-wdrożenie-i-uruchamianie)
 
+
+
 ---
 
-## 1. Wprowadzenie
+## 1. Wprowadzenie {#1-wprowadzenie}
 
 System zarządzania magazynem "Primus Inter Pares 2026" jest kompleksową platformą do kontroli przestrzeni magazynowej z automatyczną alokacją miejsc, monitorowaniem środowiska w czasie rzeczywistym oraz zaawansowanym systemem raportowania.
 
@@ -41,13 +43,13 @@ System zarządzania magazynem "Primus Inter Pares 2026" jest kompleksową platfo
 
 ---
 
-## 2. Architektura Systemu
+## 2. Architektura Systemu {#2-architektura-systemu}
 
 **Typ architektury:** Hybrid Event-Driven Modular Monolith (IoT Ready)
 
 System składa się z 10+ kontenerów Docker, realizujących wszystkie wymagania funkcjonalne i niefunkcjonalne.
 
-### 2.1 Diagram Komponentów
+### 2.1 Diagram Komponentów {#21-diagram-komponentów}
 
 ```mermaid
 flowchart TB
@@ -101,7 +103,7 @@ flowchart TB
 
 > Połączenia bez oznaczenia TLS/HTTPS (np. API → PostgreSQL, API → MinIO) zachodzą wyłącznie w izolowanej sieci wewnętrznej Docker i nie są narażone na ruch zewnętrzny.
 
-### 2.2 Stos Technologiczny
+### 2.2 Stos Technologiczny {#22-stos-technologiczny}
 
 | Warstwa | Technologie |
 |---------|-------------|
@@ -119,9 +121,9 @@ flowchart TB
 
 ---
 
-## 3. Moduły Systemu
+## 3. Moduły Systemu {#3-moduły-systemu}
 
-### 3.1 Backend (FastAPI)
+### 3.1 Backend (FastAPI) {#31-backend-fastapi}
 
 
 #### Endpointy API (`/api/v1/`):
@@ -183,7 +185,7 @@ System implementuje rygorystyczną politykę bezpieczeństwa dla nowych kont:
    - **Approve**: Konto zostaje aktywowane (`is_active=True`), co umożliwia logowanie i konfigurację 2FA.
    - **Reject**: Dane użytkownika są trwale usuwane z systemu.
 
-### 3.2 Worker (Celery)
+### 3.2 Worker (Celery) {#32-worker-celery}
 
 Worker realizuje zadania w tle:
 
@@ -199,7 +201,7 @@ Worker realizuje zadania w tle:
 - Raporty: konfigurowalna godzina (np. 6:00 codziennie)
 - Backupy: konfigurowalna godzina (np. 2:00 codziennie)
 
-### 3.3 Frontend Web (React + Vite)
+### 3.3 Frontend Web (React + Vite) {#33-frontend-web-react--vite}
 
 Aplikacja webowa napisana w TypeScript z użyciem nowoczesnych narzędzi:
 
@@ -226,7 +228,7 @@ Aplikacja webowa napisana w TypeScript z użyciem nowoczesnych narzędzi:
 - **Scanner** — obsługa skanera kodów (kamerka lub ręczne wpisanie)
 - **VoiceCommand** — integracja z Web Speech API
 
-### 3.4 Aplikacja Mobilna (React Native)
+### 3.4 Aplikacja Mobilna (React Native) {#34-aplikacja-mobilna-react-native}
 
 Natywna aplikacja mobilna dla magazynierów, zoptymalizowana pod kątem pracy w terenie:
 
@@ -241,7 +243,7 @@ Natywna aplikacja mobilna dla magazynierów, zoptymalizowana pod kątem pracy w 
 | **State Management** | TanStack React Query |
 | **Bezpieczeństwo** | Expo Secure Store (tokeny JWT) |
 | **Kamera** | Expo Camera (skanowanie kodów) |
-| **Rozpoznawanie mowy** | @react-native-voice/voice |
+| **Rozpoznawanie mowy** | `@react-native-voice/voice` |
 
 #### Ekrany aplikacji (`app/`):
 
@@ -259,7 +261,7 @@ Natywna aplikacja mobilna dla magazynierów, zoptymalizowana pod kątem pracy w 
 
 Komponent umożliwiający sterowanie aplikacją głosowo:
 
-1. **Nagrywanie głosu** — `@react-native-voice/voice` z lokalizacją polską (`pl-PL`)
+1. **Nagrywanie głosu** — ``@react-native-voice/voice`` z lokalizacją polską (`pl-PL`)
 2. **Przetwarzanie** — wysłanie tekstu do backend LLM
 3. **Akcje** — parsowanie intencji i nawigacja do odpowiedniego ekranu:
    - *"Przyjmij mleko"* → przekierowanie do `/actions/receive` z parametrami
@@ -286,7 +288,7 @@ Funkcja umożliwiająca szybką identyfikację produktu za pomocą kamery w urz�
 #### Uruchamianie aplikacji mobilnej:
 Dokładne instrukcje instalacji znajdują się w pliku [README.md](https://github.com/Primus2026/primus-mobile/blob/main/README.md) w repozytorium [primus-mobile](https://github.com/Primus2026/primus-mobile).
 
-### 3.5 Warstwa IoT
+### 3.5 Warstwa IoT {#35-warstwa-iot}
 
 #### MQTT Broker (Mosquitto)
 
@@ -307,7 +309,7 @@ Mikroserwis nasłuchujący MQTT:
 - Wykrywa anomalie (przekroczenie temperatur, nieautoryzowane zdjęcie wagi)
 - Tworzy alerty w bazie danych poprzez API backend
 
-### 3.6 Baza Danych i Cache
+### 3.6 Baza Danych i Cache {#36-baza-danych-i-cache}
 
 #### PostgreSQL
 
@@ -332,7 +334,7 @@ Object storage dla plików binarnych:
 
 ---
 
-## 4. Model Danych
+## 4. Model Danych {#4-model-danych}
 
 ### Diagram ERD
 
@@ -348,7 +350,7 @@ Object storage dla plików binarnych:
 
 ---
 
-## 5. Realizacja Wymagań
+## 5. Realizacja Wymagań {#5-realizacja-wymagań}
 
 Poniższa tabela mapuje wymagania z regulaminu na komponenty systemu:
 
@@ -382,7 +384,7 @@ Poniższa tabela mapuje wymagania z regulaminu na komponenty systemu:
 
 ---
 
-## 6. Bezpieczeństwo
+## 6. Bezpieczeństwo {#6-bezpieczeństwo}
 
 ### Szyfrowanie w Tranzycie
 
@@ -411,7 +413,7 @@ Poniższa tabela mapuje wymagania z regulaminu na komponenty systemu:
 
 ---
 
-## 7. Wdrożenie i Uruchamianie
+## 7. Wdrożenie i Uruchamianie {#7-wdrożenie-i-uruchamianie}
 
 Dokładne instrukcje uruchamiania całego systemu (stack Docker Compose) znajdują się w pliku [README.md](https://github.com/Primus2026/primus-infra/blob/main/README.md) w repozytorium [primus-infra](https://github.com/Primus2026/primus-infra).
 

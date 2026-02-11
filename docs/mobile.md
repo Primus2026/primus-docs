@@ -22,7 +22,7 @@ Natywna aplikacja mobilna zbudowana w oparciu o **React Native** i **Expo**.
 | **HTTP** | Axios | Komunikacja z backendem |
 | **Bezpieczeństwo** | Expo Secure Store | Przechowywanie tokenów JWT |
 | **Kamera** | Expo Camera | Skanowanie kodów kreskowych |
-| **Głos** | @react-native-voice/voice | Asystent głosowy |
+| **Głos** | `@react-native-voice/voice` | Asystent głosowy |
 
 
 ## Realizacja Wymagań Specyfikacji
