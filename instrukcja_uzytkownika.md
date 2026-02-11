@@ -87,15 +87,21 @@ Administrator jest tworzony domyślnie podczas instalacji systemu.
 
 3. Kliknij **"Zaloguj się"**.
 
+![Logowanie Admina](assets/user-manual/web-logowanie-admin.png)
+
 ### Dashboard (Panel Główny)
 
 Jest to centrum dowodzenia. Widzisz tutaj skrócone informacje z innych modułów:
+
+![Widok Dashboardu](assets/user-manual/web-widow-dashboardu.png)
 
 - **Kafelki Szybkiego Dostępu:** Kliknięcie w kafelek (np. "Produkty") przenosi bezpośrednio do odpowiedniej sekcji.
 
 ### Zarządzanie Użytkownikami
 
 W tej sekcji decydujesz, kto ma dostęp do systemu.
+
+![Zarządzanie Użytkownikami](assets/user-manual/web-zarzadzanie-uzytkownikami.png)
 
 - **Zatwierdzanie:** Nowi użytkownicy, którzy zarejestrowali się sami, trafiają na listę "Oczekujących". Kliknij zielony przycisk "Zatwierdź" , aby dać im dostęp.
 
@@ -107,33 +113,57 @@ W tej sekcji decydujesz, kto ma dostęp do systemu.
 
 Tutaj odwzorowujesz fizyczny układ magazynu w systemie.
 
+![Definicja Magazynu](assets/user-manual/web-definicja-magazynu.png)
+
 - **Dodawanie Regału:**
+  1. Kliknij "Nowy Regał".
 
-    1. Kliknij "Dodaj Regał".
+  2. Wypełnij formularz: Oznaczenie (np. R-01), Wymiary, Limity Wagi i Temperatury.
 
-    2. Wypełnij formularz: Oznaczenie (np. R-01), Wymiary, Limity Wagi i Temperatury.
-
-    3. _Walidacja:_ System nie pozwoli stworzyć regału z ujemnymi wymiarami.
+  ![Dodawanie Regału](assets/user-manual/web-dodawanie-regalu.png) 3. _Walidacja:_ System nie pozwoli stworzyć regału z ujemnymi wymiarami.
 
 - **Import Masowy (CSV):**
-
 - Jeśli masz setki regałów, przygotuj plik Excel/CSV i użyj opcji "Importuj".
+
+![Import CSV 1](assets/user-manual/web-import-csv-1.png)
+![Import CSV 2](assets/user-manual/web-import-csv-2.png)
+
+![Import CSV 3](assets/user-manual/web-import-csv3.png)
 
 - **Edycja i Usuwanie:**
 
 - Możesz zmienić parametry istniejącego regału.
 
+![Edycja Regału](assets/user-manual/web-edycja-regalu.png)
+![Edycja Regału 1](assets/user-manual/web-edycja-regalu1.png)
+
+- lub usunąć regał
+
+![Usuwanie Regału](assets/user-manual/web-usuwanie-regalu1.png)
+
 - _Ważne:_ **Nie można usunąć regału, na którym stoją towary.** Musisz najpierw przenieść produkty w inne miejsce.
+
+![Błąd Usuwania](assets/user-manual/web-usuwanie-regalu-3-blad.png)
+![Sukces Usuwania](assets/user-manual/web-usuwanie-regalu-5-sukcecs.png)
 
 - **Wizualizacja:** Kliknij na regał, aby zobaczyć graficzny podgląd (mapę cieplną), gdzie dokładnie stoją produkty.
 
-- **Wyszukiwanie:** Użyj paska szukania, aby szybko znaleźć odpowiedni produkt na regale.
+![Wizualizacja](assets/user-manual/web-wizualizacja-1.png)
+![Wizualizacja 2](assets/user-manual/web-wizualizacja-2.png)
+
+- **Wyszukiwanie:** Użyj paska szukania, aby szybko znaleźć odpowiedni regał na liście.
+
+![Wyszukiwanie Regału](assets/user-manual/web-wyszukiwanie-regalow-1.png)
 
 ### Definicja Produktów
 
 Baza asortymentu. Każdy towar w magazynie musi być tu zdefiniowany.
 
+![Definicja Produktów](assets/user-manual/web-definicje-produktow.png)
+
 - **Tworzenie Produktu:** Kliknij "Dodaj" i wypełnij nazwę, kod kreskowy, wymagania temperaturowe.
+
+![Dodawanie Produktu 1](assets/user-manual/web-dodawanie-produktow-1.png)
 
 - **Zdjęcia:**
 
@@ -141,41 +171,83 @@ Baza asortymentu. Każdy towar w magazynie musi być tu zdefiniowany.
 
 - Możesz wgrać jedno zdjęcie ręcznie lub użyć **Prześlij Bulk Zdjęć** (Masowe Wgrywanie), wstaw tyle zdjęć ile chcesz, pamiętając o zgodności nazw zdjęć z wcześniejszym dodanym plikiem csv. Nazwa zdjęcia musi być taka sama jak nazwa zdjęcia produktu w pliku.
 
+![Dodawanie Produktu 3](assets/user-manual/web-dodawanie-produktu3.png)
+
 - **Import CSV:** Pozwala wgrać tysiące produktów z jednej tabeli.
+
+![Import Produktów 1](assets/user-manual/web-import-produktow-1.png)
+![Import Produktów 2](assets/user-manual/web-import-produktow-2.png)
+![Import Produktów 3](assets/user-manual/web-import-produktow-3.png)
+
+- **Import Zdjęć:**
+
+![Import Zdjęć 2](assets/user-manual/web-import-zdjec-2.png)
 
 - **Walidacja:** System sprawdzi, czy parametry produktu nie są ujemne oraz czy kody kreskowe są unikalne.
 
 - **Szukanie:** Pasek wyszukiwania pozwala filtrować listę po nazwie lub kodzie.
+  ![Import Zdjęć 3](assets/user-manual/web-import-zdjec-3.png)
+  ![Import Zdjęć 4](assets/user-manual/web-import-zdjec-4.png)
+- **Kompatebilność nazw** Nazwy zdjęć muszą być takie same jak w pliku .csv.
 
 ### Raporty
 
 Generowanie raportów dla magazynu.
 
+![Raporty](assets/user-manual/web-raporty.png)
+
 - **Generowanie Ręczne:** Wybierz typ (Temperatury, Ważność, Inwentaryzacja) i kliknij "Generuj".
+
+![Generowanie Raportu 1](assets/user-manual/web-generowanie-raportu-1.png)
+![Generowanie Raportu 2](assets/user-manual/web-generowanie-raportu-2.png)
 
 - **Filtrowanie:** Możesz wygenerować raport tylko dla konkretnego regału.
 
 - **Pobieranie:** Po wygenerowaniu, raport pojawi się na liście. Kliknij ikonę chmurki, aby pobrać go jako PDF/CSV.
 
+![Generowanie Raportu 3](assets/user-manual/web-generowanie-raportu-3.png)
+
 ### Alerty (Powiadomienia)
 
+![Alerty](assets/user-manual/web-alerty-1.png)
+
 - **Nowe (Nieodczytane):** Nowe zdarzenia (np. "Zbyt wysoka temperatura"). Dzwonek w menu pokazuje ich liczbę.
+
+![Odczytanie Alertu](assets/user-manual/web-odczytanie-alertu.png)
+![Odczytane Alerty](assets/user-manual/web-odczytane-alerty.png)
 
 - **Aktywne (Odczytane):** Zdarzenia, które już widziałeś, ale problem nie został rozwiązany.
 
 - **Rozwiązane (Archiwum):** Historia naprawionych usterek.
 
+![Rozwiązywanie Alertu](assets/user-manual/web-rowziawanie-alertu.png)
+![Rozwiązane Alerty](assets/user-manual/web-rozwiazane-alerty.png)
+
 ### Kopie Zapasowe (Backups)
 
 Bezpieczeństwo danych to priorytet.
 
+![Kopie Zapasowe](assets/user-manual/web-backupy.png)
+
 - **Tworzenie:** Kliknij "Utwórz Kopię". System zapisze całą bazę danych w bezpiecznym miejscu.
+
+![Tworzenie Backupu 1](assets/user-manual/web-tworzenie-backupu-1.png)
+![Tworzenie Backupu 2](assets/user-manual/web-tworzenie-backupu-2.png)
 
 - **Przywracanie:** W razie awarii, wybierz plik z listy i kliknij "Przywróć".
 
+![Przywracanie Backupu 1](assets/user-manual/web-przywracanie-backupu-1.png)
+![Przywracanie Backupu 2](assets/user-manual/web-przywracanie-backupu-2.png)
+
 ### Zarządzanie AI (Sztuczna Inteligencja)
 
+![Zarządzanie AI](assets/user-manual/web-zarzadzanie-ai.png)
+
 - **Trening:** Wgraj zdjęcia produktów, aby nauczyć system ich rozpoznawania. Kliknij "Rozpocznij Trening".
+
+![Trenowanie 1](assets/user-manual/trenowanie-1.png)
+![Trenowanie Zdjęcie](assets/user-manual/trenowanie-zdjecie.png)
+![Trenowanie 3](assets/user-manual/trenowanie-3.png)
 
 - **Reset:** Jeśli model działa źle, możesz go zresetować do ustawień fabrycznych.
 
@@ -205,17 +277,26 @@ Następujące moduły działają identycznie jak u Administratora (patrz rozdzia
 
 ### Profil Użytkownika
 
+![Profil](assets/user-manual/web-profil.png)
+
 - **Zmiana Hasła:** Tutaj możesz zaktualizować swoje hasło do logowania.
 
 - **Weryfikacja Dwuetapowa (2FA):**
+  1. Kliknij "Włącz 2FA".
 
-    1. Kliknij "Włącz 2FA".
+  ![2FA 1](assets/user-manual/web-2fa-1.png)
 
-    2. Zeskanuj kod QR aplikacją w telefonie (Google Authenticator) i kniknij przycisk "dalej".
+2. Zeskanuj kod QR aplikacją w telefonie (Google Authenticator) i kniknij przycisk "dalej".
 
-    3. Wpisz 6-cyfrowy kod z Google Authenticator i zakończ proces.
+![2FA 2](assets/user-manual/web-2fa-2.png)
 
-    4. Od teraz logowanie będzie wymagało podania jednorazowego kodu dla bezpieczeństwa.
+3. Wpisz 6-cyfrowy kod z Google Authenticator i zakończ proces.
+
+![2FA 3](assets/user-manual/web-2fa-3.png)
+
+4.  Od teraz logowanie będzie wymagało podania jednorazowego kodu dla bezpieczeństwa.
+
+![2FA 4](assets/user-manual/web-2fa-4.png)
 
 ---
 
@@ -227,9 +308,15 @@ Aplikacja to Twoje główne narzędzie pracy na hali magazynowej.
 
 1. Uruchom aplikację.
 
+![Logowanie Mobile 1](assets/user-manual/mobile-logowanie1.png)
+
 2. Wpisz Login i Hasło.
 
+![Logowanie Mobile 2](assets/user-manual/mobile-logowanie-21.png)
+
 3. **2FA:** Jeśli włączyłeś weryfikację dwuetapową, system poprosi o 6-cyfrowy kod z aplikacji Authenticator. Bez niego nie wejdziesz do systemu.
+
+![Logowanie Mobile 3](assets/user-manual/mobile-logowanie-3.png)
 
 ### Proces Przyjęcia (Inbound)
 
@@ -240,16 +327,15 @@ Jak położyć towar na półkę?
 2. **Skanowanie:** Zeskanuj kod kreskowy.
 
 3. **Co jeśli kod jest zniszczony? (AI):**
+   - Kliknij "Użyj AI". Zrób zdjęcie produktu.
 
-    - Kliknij "Użyj AI". Zrób zdjęcie produktu.
+   - System rozpozna towar.
 
-    - System rozpozna towar.
+   - **Co jeśli AI się pomyli? (Pick from List):** Jeśli system nie jest pewny, wyświetli okienko z pytaniem "Czy to ten produkt?". Kliknij "To nie to", aby ręcznie wybrać właściwy produkt z listy rozwijanej.
 
-    - **Co jeśli AI się pomyli? (Pick from List):** Jeśli system nie jest pewny, wyświetli okienko z pytaniem "Czy to ten produkt?". Kliknij "To nie to", aby ręcznie wybrać właściwy produkt z listy rozwijanej.
+4. **Alokacja:** Aplikacja wskaże, gdzie masz iść (np. "Regał R-01, kolumna 5, rząd 3").
 
-4.  **Alokacja:** Aplikacja wskaże, gdzie masz iść (np. "Regał R-01, kolumna 5, rząd 3").
-
-5.  Połóż towar i kliknij **"Potwierdź lokację"**.
+5. Połóż towar i kliknij **"Potwierdź lokację"**.
 
 ### Proces Wydania (Outbound)
 
@@ -260,10 +346,9 @@ Jak pobrać towar do wysyłki?
 2. **Wybór Produktu:** Zeskanuj kod, użyj AI (tak samo jak przy przyjęciu) lub wybierz ręcznie z listy.
 
 3. **Lokalizacja (FIFO):**
+   - System wskaże _konkretną_ sztukę, którą musisz wziąć (tę, która leży najdłużej).
 
-    - System wskaże _konkretną_ sztukę, którą musisz wziąć (tę, która leży najdłużej).
-
-    - Nie bierz towaru z innej półki – system to wykryje (niezgodność wagi).
+   - Nie bierz towaru z innej półki – system to wykryje (niezgodność wagi).
 
 4. Zdejmij towar i kliknij **"Potwierdź pobranie"**.
 
@@ -288,11 +373,10 @@ Najbardziej zaawansowana funkcja systemu. Pozwala sterować aplikacją bez użyc
 1. Kliknij ikonę mikrofonu na dole ekranu głównego.
 
 2. Powiedz komendę. Przykłady:
+   - **Przyjęcie:** _"Przyjmij mleko"_ -> System automatycznie wypełni formularz przyjęcia.
 
-    - **Przyjęcie:** _"Przyjmij mleko"_ -> System automatycznie wypełni formularz przyjęcia.
+   - **Wydanie:** _"Wydaj paracetamol"_ -> System znajdzie najstarszą partię leku i pokaże Ci, gdzie iść.
 
-    - **Wydanie:** _"Wydaj paracetamol"_ -> System znajdzie najstarszą partię leku i pokaże Ci, gdzie iść.
-
-    - **Raport:** _"Wygeneruj raport temperatur [dla regału numer 5]"_ -> System zleci raport.
+   - **Raport:** _"Wygeneruj raport temperatur [dla regału numer 5]"_ -> System zleci raport.
 
 Asystent rozumie język naturalny. Możesz mówić pełnymi zdaniami, choć najlepiej działają krótkie komendy. System "słyszy", przetwarza Twoją mowę na tekst, a następnie inteligenta analiza (LLM) decyduje, jaką akcję wykonać w aplikacji.
