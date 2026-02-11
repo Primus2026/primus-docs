@@ -37,6 +37,7 @@ Tutaj znajdziesz szczegółowe opisy architektury, instrukcje wdrożeniowe oraz 
 - **[Repozytorium Mobile](https://github.com/Primus2026/primus-mobile)**: Aplikacja dla magazynierów.
 - **[Repozytorium MQTT Listener](https://github.com/Primus2026/primus-mqtt-listener)**: Mikroserwis przetwarzający dane z sensorów.
 - **[Repozytorium Mock Sensor](https://github.com/Primus2026/primus-mock-sensor)**: Symulator urządzeń IoT.
+- **[Docker Hub (Obrazy)](https://hub.docker.com/u/flyinbutter)**: Gotowe obrazy kontenerów.
 
 
 ### 📄 Wersje PDF
