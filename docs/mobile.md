@@ -79,7 +79,7 @@ primus-mobile/
 *   Urządzenie mobilne z systemem android
 
 ### Instalacja gotowego pakietu
-Pobierz gotowy pakiet apk z najnowszego release na Githubie i zainstaluj go na urządzeniu mobilnym. Następnie postępuj zgodnie z instrukcją użytkownika ([Primus Docs](https://github.com/Primus2026/primus-docs)) aby skonfigurować URL backendu.
+Pobierz gotowy pakiet apk z najnowszego release na Githubie lub z folderu z rozwiązaniem konkursu i zainstaluj go na urządzeniu mobilnym. Następnie postępuj zgodnie z instrukcją użytkownika ([Primus Docs](https://github.com/Primus2026/primus-docs)) aby skonfigurować URL backendu.
 
 ### Kompilacja z kodu źródłowego
 Wymagane narzędzia:
